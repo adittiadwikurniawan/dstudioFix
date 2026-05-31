@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Button from '../ui/Button';
+import afterImage from '../../assets/homepage/after.jpg';
+import beforeImage from '../../assets/homepage/before.jpg';
 
 const HeroSection = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -80,7 +82,7 @@ const HeroSection = () => {
               {/* After Image (Full background) */}
               <div className="absolute inset-0 bg-[#e0f2fe]">
                 <img 
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" 
+                  src={afterImage} 
                   alt="Setelah diedit formal" 
                   className="w-full h-full object-cover"
                   draggable="false"
@@ -98,7 +100,7 @@ const HeroSection = () => {
                 style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600" 
+                  src={beforeImage} 
                   alt="Sebelum diedit" 
                   className="w-full h-full object-cover grayscale brightness-95"
                   draggable="false"
@@ -126,3 +128,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

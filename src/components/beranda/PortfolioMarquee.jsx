@@ -2,6 +2,19 @@ import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import Button from '../ui/Button';
 import { Link } from 'react-router-dom';
+import jashitam1 from '../../assets/marquee/jashitam1.png';
+import jashitam2 from '../../assets/marquee/jashitam2.png';
+import jashitam3 from '../../assets/marquee/jashitam3.png';
+import jashitam4 from '../../assets/marquee/jashitam4.png';
+import jashitam5 from '../../assets/marquee/jashitam5.png';
+import ubee1 from '../../assets/marquee/ub1.png';
+import ubee3 from '../../assets/marquee/ub3.png';
+import ubee4 from '../../assets/marquee/ub4.png';
+import ubee5 from '../../assets/marquee/ub5.png';
+import cpns1 from '../../assets/marquee/kemejaputih1.png';
+import cpns2 from '../../assets/marquee/kemejaputih2.png';
+import cpns3 from '../../assets/marquee/kemejaputih3.png';
+import cpns5 from '../../assets/marquee/kemejaputih5.png';
 
 const PortfolioMarquee = () => {
   const [activeTab, setActiveTab] = useState('ktm'); // 'ktm' | 'cpns' | 'jashitam'
@@ -12,74 +25,26 @@ const PortfolioMarquee = () => {
     { id: 'jashitam', label: 'Pas Foto Jas Hitam', icon: 'solar:user-bold' },
   ];
 
-  // Dummy portfolio data with strict, equal sizes (w-48 h-64, aspect ratio 3:4)
   const portfolioData = {
     ktm: [
-      {
-        before: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=270&bg=blue',
-        label: 'KTM Univ Brawijaya'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=270&bg=red',
-        label: 'KTM Univ Indonesia'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=270&bg=blue',
-        label: 'KTM Univ Gadjah Mada'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=270&bg=red',
-        label: 'KTM Univ Airlangga'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200&h=270&bg=blue',
-        label: 'KTM Institut Teknologi Bandung'
-      }
+      { image: ubee1, label: 'KTM Univ Brawijaya' },
+      { image: ubee3, label: 'KTM Univ Gadjah Mada' },
+      { image: ubee4, label: 'KTM Univ Airlangga' },
+      { image: ubee5, label: 'KTM Univ Indonesia' },
     ],
     cpns: [
-      {
-        before: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'CPNS Kemenkumham'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'CPNS Kementerian Luar Negeri'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'CPNS Kementerian Kesehatan'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'CPNS Kemendikbud'
-      }
+      { image: cpns1, label: 'CPNS Kemenkumham' },
+      { image: cpns2, label: 'CPNS Kementerian Luar Negeri' },
+      { image: cpns3, label: 'CPNS Kementerian Kesehatan' },
+      { image: cpns5, label: 'CPNS Kemendikbud' },
     ],
     jashitam: [
-      {
-        before: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'Profil LinkedIn Formal'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'Foto Berkas Kerja BUMN'
-      },
-      {
-        before: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=270',
-        after: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=270',
-        label: 'Pas Foto Kerja Swasta'
-      }
-    ]
+      { image: jashitam1, label: 'maba Universitas Brawijaya' },
+      { image: jashitam2, label: 'Pas Foto Lamaran Kerja' },
+      { image: jashitam3, label: 'Pas Foto Resmi' },
+      { image: jashitam4, label: 'Foto Administrasi' },
+      { image: jashitam5, label: 'Foto Karyawan' },
+    ],
   };
 
   const activeItems = portfolioData[activeTab] || [];
@@ -130,38 +95,17 @@ const PortfolioMarquee = () => {
           {marqueeItems.map((item, index) => (
             <div 
               key={index} 
-              className="flex-shrink-0 w-[190px] h-[260px] bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-md border border-slate-200/40 dark:border-zinc-700/50 hover:-translate-y-1 transition-transform duration-300 relative group"
+              className="flex-shrink-0 w-[225px] h-[487px] bg-white dark:bg-zinc-800 rounded-[32px] overflow-hidden shadow-2xl border border-slate-200/40 dark:border-zinc-700/50 hover:-translate-y-1 transition-transform duration-300 relative group"
             >
-              {/* Split Before/After layout */}
-              <div className="h-full w-full flex">
-                {/* Before Half */}
-                <div className="w-1/2 h-full relative overflow-hidden bg-slate-100 border-r border-white/50">
-                  <img 
-                    src={item.before} 
-                    alt="Sebelum" 
-                    className="w-[190px] h-full object-cover max-w-none grayscale brightness-95" 
-                  />
-                  <div className="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/40 text-[9px] font-bold text-white uppercase tracking-wider">
-                    Before
-                  </div>
-                </div>
-                {/* After Half */}
-                <div className="w-1/2 h-full relative overflow-hidden bg-primary-50">
-                  <img 
-                    src={item.after} 
-                    alt="Sesudah" 
-                    className="w-[190px] h-full object-cover max-w-none ml-[-95px]" 
-                  />
-                  <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-primary-500/80 text-[9px] font-bold text-white uppercase tracking-wider">
-                    After
-                  </div>
-                </div>
-              </div>
-              
-              {/* Hover Overlay Detail */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-left">
+              <img 
+                src={item.image}
+                alt={item.label}
+                className="w-full h-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-left">
                 <span className="text-[10px] font-black text-primary-400 uppercase tracking-widest">D Studio Edit</span>
-                <h4 className="text-xs font-bold text-white truncate">{item.label}</h4>
+                <h4 className="text-sm font-bold text-white truncate">{item.label}</h4>
               </div>
             </div>
           ))}

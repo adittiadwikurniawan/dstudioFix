@@ -5,6 +5,11 @@ import HeroSection from '../components/beranda/HeroSection';
 import StatsSection from '../components/beranda/StatsSection';
 import PortfolioMarquee from '../components/beranda/PortfolioMarquee';
 import Button from '../components/ui/Button';
+import tim1 from '../assets/tim/adit.jpeg';
+import tim2 from '../assets/tim/amira.jpg';
+import tim3 from '../assets/tim/hadi.jpg';
+import tim4 from '../assets/tim/yasmin.jpg';
+import tim5 from '../assets/tim/ali.JPG';
 
 const BerandaPage = () => {
   const features = [
@@ -32,27 +37,27 @@ const BerandaPage = () => {
     {
       name: 'Muhammad Nur Hadi',
       role: 'Creative Director',
-      avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200',
+      avatar: tim1,
     },
     {
       name: 'Amira Salma Nafisa',
       role: 'Admin Specialist',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200',
+      avatar: tim2,
     },
     {
       name: 'Adittia Dwi Kurniawan',
       role: 'Studio Manager',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
+      avatar: tim3,
     },
     {
       name: 'Yasmine Shafira Ahmad',
       role: 'Social Media Marketing',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200',
+      avatar: tim4,
     },
     {
       name: 'Moh Ali Farda Al Ghifarri',
       role: 'Social Media Manager',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
+      avatar: tim5,
     },
   ];
 
