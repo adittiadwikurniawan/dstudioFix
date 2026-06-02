@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Input from '../ui/Input';
 import Select from '../ui/Select';
@@ -275,9 +276,9 @@ const StepDataFoto = ({
               <div className="flex-1">
                 <p className="text-xs font-semibold text-[#0D0D1A] leading-relaxed">
                   Saya menyatakan data yang saya isi sudah benar dan menyetujui{' '}
-                  <span className="text-[#2101FC] font-bold underline underline-offset-2 cursor-pointer hover:text-[#0030FC]">
+                  <Link to="/privacy-policy" className="text-[#2101FC] font-bold underline underline-offset-2 cursor-pointer hover:text-[#0030FC]">
                     Kebijakan Privasi DStudio
-                  </span>
+                  </Link>
                   .
                 </p>
                 <p className="text-[11px] text-[#6B7280] mt-1 leading-relaxed">
