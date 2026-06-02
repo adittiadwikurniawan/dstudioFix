@@ -188,13 +188,7 @@ const Navbar = () => {
           {/* Divider */}
           <div className="h-px bg-slate-200 dark:bg-zinc-800 my-4" />
 
-          {/* Additional Actions */}
-          <div className="space-y-3">
-            <Link to="/hubungi" className="flex items-center gap-3 p-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors">
-              <Icon icon="solar:phone-bold" className="w-5 h-5" />
-              <span className="font-medium">Hubungi Kami</span>
-            </Link>
-          </div>
+          
 
           {/* CTA Button */}
           <div className="mt-auto pt-6">
