@@ -26,7 +26,7 @@ const HubungiPage = () => {
       desc: 'Bicara langsung dengan editor kami melalui WhatsApp resmi.',
       icon: 'bi:whatsapp',
       actionText: 'Hubungi via WhatsApp',
-      link: 'https://wa.me/6287766086204',
+      link: 'https://wa.me/6287786086204',
       bgColor: 'hover:bg-emerald-50 dark:hover:bg-emerald-950/20 hover:text-emerald-600',
     },
     {
@@ -34,7 +34,7 @@ const HubungiPage = () => {
       desc: 'Punya pertanyaan kerjasama bisnis atau penawaran korporat?',
       icon: 'bi:envelope-fill',
       actionText: 'Kirim Email Kami',
-      link: 'mailto:info@dstudiophoto.com',
+      link: 'mailto:dstudiosphotos@gmail.com',
       bgColor: 'hover:bg-sky-50 dark:hover:bg-sky-950/20 hover:text-sky-600',
     },
     {
@@ -42,7 +42,7 @@ const HubungiPage = () => {
       desc: 'Lihat portofolio terbaru kami & chat kami langsung di Instagram.',
       icon: 'bi:instagram',
       actionText: 'Hubungi via Instagram',
-      link: 'https://instagram.com/d_studio',
+      link: 'https://instagram.com/d_studiophot0graphy',
       bgColor: 'hover:bg-pink-50 dark:hover:bg-pink-950/20 hover:text-pink-600',
     },
   ];
