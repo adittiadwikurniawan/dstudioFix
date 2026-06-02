@@ -12,6 +12,8 @@ import jas1 from '../assets/before-after/jas1.png';
 import jas2 from '../assets/before-after/jas2.png';
 import visa1 from '../assets/before-after/visa1.png';
 import visa2 from '../assets/before-after/visa2.png';
+import ktp1 from '../assets/before-after/ktp1.png';
+import ktp2 from '../assets/before-after/ktp2.png';
 
 const LayananPage = () => {
   const [searchParams] = useSearchParams();
@@ -99,8 +101,8 @@ const LayananPage = () => {
                 label="PAS FOTO VISA"
               />
               <BeforeAfterCard
-                beforeImage={ktm1}
-                afterImage={ktm2}
+                beforeImage={ktp2}
+                afterImage={ktp1}
                 label="PAS FOTO KTP"
               />
             </div>
